@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Create Account</h1>
+
+    <div id="msg" class="alert"></div>
+
+    <form id="registerForm" action="register.php" method="POST" novalidate>
+      <input class="input" type="text" name="name" placeholder="full name" required>
+      <input class="input" type="text" name="username" placeholder="username" required>
+      <input class="input" type="email" name="email" placeholder="email" required>
+      <input class="input" type="password" name="password" placeholder="password (min 6 chars)" required>
+      <input class="input" type="password" name="confirm" placeholder="confirm password" required>
+      <button class="btn" type="submit">Create Account</button>
+    </form>
+
+    <p class="meta">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

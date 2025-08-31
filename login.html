@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Login</h1>
+
+    <div id="msg" class="alert"></div>
+
+    <form id="loginForm" action="login.php" method="POST" novalidate>
+      <input class="input" type="text" name="username" placeholder="username or email" autocomplete="username" required>
+      <input class="input" type="password" name="password" placeholder="password" autocomplete="current-password" required>
+      <button class="btn" type="submit">Login</button>
+    </form>
+
+    <p class="meta">Don’t have an account? <a href="register.html">Register</a></p>
+    <p class="small">Tip: you can log in using either your <b>username</b> or <b>email</b>.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
